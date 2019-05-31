@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
+
+    <title>Museum of Candy</title>
+  </head>
+  
+  <body>
+    <!--  the class py-0 deletes padding from top and bottom -->
+    <!-- the class "fixed top" makes the navbar fixed when scrolling down the page -->
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+      <a href="#" class="navbar-brand">CANDY</a>  
+      <!-- adding the attribute aria-label will explain what the icon does, for humans to understand je, it's useful if using a screen reader-->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toogle Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link">HOME</a></li>
+          <li class="nav-item">
+            <a href="" class="nav-link">ABOUT</a></li>
+          <li class="nav-item">
+            <a href="" class="nav-link">TICKETS</a></li>
+        </ul>
+      </div>
+    </nav>
+      
+      <!-- Line 44: This container fluid will take all the space across the page, vertically and horizontally -->
+      <!-- Here we need to remove right and left padding of the picture, so we'll give it px-0 -->
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <!-- Here, this is very important: we added the display utilities to hide this element. We use d-none (this will display nothing for all sizes), but then to make it show again in large, we need to add: d-lg-block -->
+            <!-- we added another div to hide all the elements together -->
+            <!-- We're giving it an ID to style the spans, it's more specific when we do it on CSS instead of styling all spans -->
+            <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-3">
+              <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <!-- we give a class "img-fluid" this is from bootstrap to make images responsive -->
+            <img class="img-fluid" src="imgs/hand2.png">
+          </div>
+        </div>
+    </section>
+
+     <section class="container-fluid px-0">
+        <div class="row align-items-center content">
+          <!--  Order, it means that it will always come second expect for when we hit medium and up, it will come first (to the left) -->
+          <div class="col-md-6 order-2 order-md-1">
+              <img class="img-fluid" src="imgs/milk.png">
+          </div>
+          <!-- this will always come 1st but not from medium and up, which comes second -->
+            <div class="col-md-6 order-1 order-md-2 text-center">
+              <div class="row justify-content-center">
+                <!-- here we're adding margin bottom mb but only when it's small, medium and up, there's margin 0: mb-md-0 -->
+                <div class="col-10 col-lg-8 redpar mb-5 mb-md-0">
+                <h2 class="">MUSEUM OF CANDY</h2>
+                  <img src="imgs/lolli_icon.png" class="d-none d-lg-inline">
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center content">
+              <div class="col-md-6 text-center">
+                <div class="row justify-content-center">
+                  <div class="col-10 col-lg-8 redpar mb-5 mb-md-0">
+                  <h2 class="">MUSEUM OF CANDY</h2>
+                    <img src="imgs/lolli_icon.png" class="d-none d-lg-inline">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.</p> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="imgs/gumball.png">
+              </div>
+            </div>
+
+            <div class="row align-items-center content">
+              <div class="col-md-6 order-2 order-md-1">
+                  <img class="img-fluid" src="imgs/sprinkles.png">
+              </div>
+              <div class="col-md-6 order-1 order-md-2 text-center">
+                <div class="row justify-content-center">
+                  <div class="col-10 col-lg-8 redpar mb-5 mb-md-0">
+                  <h2 class="">MUSEUM OF CANDY</h2>
+                    <img src="imgs/lolli_icon.png" class="d-none d-lg-inline">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $(document).scroll(function() {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+  </body>
+</html>
